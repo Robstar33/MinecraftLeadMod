@@ -1,0 +1,10 @@
+{
+  "item.mymod.lead": "Lead",
+  "item.mymod.raw_lead": "Raw Lead",
+
+  "block.mymod.lead_block": "Block of Lead",
+  "block.mymod.lead_ore": "Lead Ore",
+  "block.mymod.deepslate_lead_ore": "Deepslate Lead Ore",
+
+  "itemGroup.modtab": "Lead tab"
+}
