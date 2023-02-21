@@ -12,6 +12,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.robstar.mymod.block.custom.PoisonBlock;
 import net.robstar.mymod.item.ModCreativeModeTab;
 import net.robstar.mymod.item.ModItems;
 import net.robstar.mymod.mymod;
@@ -34,6 +35,19 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModeTab.NEW_MATERIALS);
+
+    public static final RegistryObject<Block> ENDSTONE_LEAD_ORE = registerBlock("endstone_lead_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModeTab.NEW_MATERIALS);
+    public static final RegistryObject<Block> NETHERRACK_LEAD_ORE = registerBlock("neatherrack_lead_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), ModCreativeModeTab.NEW_MATERIALS);
+
+    public static final RegistryObject<Block> POISON_BLOCK = registerBlock("poison_block",
+            () -> new PoisonBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.NEW_MATERIALS);
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

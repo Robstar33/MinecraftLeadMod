@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "mymod:lead"
+    },
+    "T": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GTG",
+    "GGG"
+  ],
+  "result": {
+    "item": "mymod:eight_ball"
+  }
+}
